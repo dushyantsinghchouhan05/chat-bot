@@ -95,5 +95,4 @@ user_query = st.text_area("Enter your query:", height=150)
 if user_query:
     with st.spinner("Fetching results..."):
         output = handle_query(user_query)
-    st.markdown(f"### Response:
-{output}")
+    st.markdown(f"### Response:\n{output}")
