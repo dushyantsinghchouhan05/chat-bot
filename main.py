@@ -20,7 +20,7 @@ st.sidebar.write("""
 # Function to execute queries
 
 def run_query(sql, params=()):
-    with sqlite3.connect("employee_data.db") as conn:
+    with sqlite3.connect("chat_assistant.db") as conn:
         cur = conn.cursor()
         cur.execute(sql, params)
         return cur.fetchall()
